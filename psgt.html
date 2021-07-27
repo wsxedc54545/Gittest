@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>password_js</title>
+  <style>
+    body {
+      font-size: 38px;
+    }
+    .result {
+      background: pink;
+      width: 15%;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div><label><input type="checkbox" name="en" data-char="abcdefghijklmnopqrstuvwxyz" />英文</label></div>
+    <div><label><input type="checkbox" name="num" data-char="0123456789" />數字</label></div>
+    <div><label><input type="checkbox" name="sp" data-char="!@#$%&*?" />特殊符號</label></div>
+    <div>
+      <button class="btn-generate">產生</button>
+    </div>
+    <div class="result">
+      亂數密碼
+    </div>
+  </div>
+<script>
+  document.querySelector('.btn-generate').addEventListener('click', function() {
+    let availableChar = ''
+    const elements = document.querySelectorAll('input[type=checkbox]')
+    for(let i=0; i<elements.length; i++) {
+      if (elements[i].checked) {
+        availableChar += elements[i].getAttribute('data-char')
+      }
+    }
+
+    let result = ''
+    for(let i = 0; i<10; i++) {
+      // 0 ~ availableChar.length - 1
+      const number = Math.floor(Math.random() * availableChar.length)
+      result += availableChar[number] 
+    }
+    document.querySelector('.result').innerText = result
+  })
+</script>
+</body>
+</html>
+
+<!-- 1.即戰力，已經可以獨立負責專案的人 -->
+2.可以培養起來的人
+
+2.接案
+1.專案經驗 框架 多人協作  你有抗壓性
+3.作品＝>功能性強的，某些強項 svg canva js工具超強
+
+html css 每個人寫法不同  position  padding
+
+js 寫法挺固定ㄉ 抽獎 原生js jquery 彈性比較小
+學一樣的 功能
+
+先找一個模（抄襲）＝> 大家邊練ＪＳ 邊修改 （非抄襲）
+
+
+
+
+<section style="background: red;">
+
+</section>
+
+width:600px
+
+前端難民;歧視
+
+
+
+
+
+
+
+<sdfkskf>
+
+</sdfkskf>
+
+
+
+<!-- 3.他以為你很厲害-好芋充數 -->
